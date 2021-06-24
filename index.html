@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Mollat</title>
+</head>
+<body>
+    <header class="fond_header" >
+        <img class="close" src="img/close.svg" >
+        <div class="col_header">
+            <div class="grand_title">
+                Les conseils du 
+                <div style="font-size: 100px;" >Pere Noel</div>
+            </div>
+
+            <div class="sub_title" >
+                <div>Vous n'avez aucune de quoi offrir à votre petit cousin de 8 ans que vous ne voyez qu'à 
+                Noel et à la nouvelle copine de votre frère qui semble aussi bien passioné par le tricot que par la formule 1 ? 
+                </div>
+                <div>Ne perdez pas des heures à arpenter tous nos livres, le Père-Noël de mollat est là pour vous aider ! 
+                 Grâce a de simple filtre, vous voilà avec un liste beaucoup plus courte de livre sélectionnés par nos soins !
+                </div>
+            </div> 
+
+            <div class="row_button_header" >
+                <a href="#step1">C'est parti</a> 
+                <img  src="img/arrow.svg"/>
+
+            </div>
+        </div>
+     
+    </header>
+
+
+    <div id="step1">
+        <div class="etapes">
+            <div class="etape">
+                <img src="img/step/tranche_actual.svg"/>
+                <div> Tranche d'age</div>
+            </div>
+            <img class="trait" src="img/step/trait1_empty.svg"/>
+            <div class="etape">
+                <img src="img/step/interet_empty.svg"/>
+                <div> Centre d'interets</div>
+            </div>
+            <img class="trait" src="img/step/trait2_empty.svg"/>
+            <div class="etape">
+                <img src="img/step/lecture_empty.svg"/>
+                <div>Préférences de lecture</div>
+            </div>
+            <img class="trait" src="img/step/trait3_empty.svg"/>
+            <div class="etape">
+                <img src="img/step/langue_empty.svg"/>
+                <div>Langue</div>
+            </div> 
+        </div>
+        <div class="container_tranche fond_journal" >
+                <div class="col_tranche" >
+                    <div>
+                    <h2 class="title" >Quel(s) tranche(s) d’âge vous interesse ? </h2>
+                    <div>Choisir une tranche d’âge permettra au lutin du Père-Noël de mieux vous conseiller, vous pouvez en choisir une ou plusieurs (ou même pas du tout!).  </div>
+                    </div>
+                    <div class="row_tranche" >
+                            <div class="container_choice_tranche" > 
+                                <img src="img/encadrement_langue.svg">
+                                <div class="text_choise_tranche"  >Enfants</div>  
+                            </div>
+
+                            <div class="container_choice_tranche" > 
+                                <img src="img/encadrement_langue.svg">
+                                <div class="text_choise_tranche"  >Jeunesse</div>  
+                            </div>
+
+                            <div class="container_choice_tranche" > 
+                                <img src="img/encadrement_langue.svg">
+                                <div class="text_choise_tranche"  >Jeunes Adultes</div>  
+                            </div>
+
+                            <div class="container_choice_tranche" > 
+                                <img src="img/encadrement_langue.svg">
+                                <div class="text_choise_tranche"  >Adultes</div>  
+                            </div>
+
+                            <div class="container_choice_tranche" > 
+                                <img src="img/encadrement_langue.svg">
+                                <div class="text_choise_tranche"  >Senior</div>  
+                            </div>
+                        </div>
+                        <div>
+                            <button onclick="changeStep(1)" >Passer l'étape</button>
+                        </div>
+                </div>
+                <img class="illu" src="img/illu/guitare.svg"/>
+
+                
+        </div>
+
+    </div>
+
+    <div class="disabled" id='step2'>
+        <div class="etapes">
+            <div class="etape">
+                <img src="img/step/tranche_full.svg"/>
+                <div> Tranche d'age</div>
+            </div>
+            <img class="trait" src="img/step/trait1_full.svg"/>
+            <div class="etape">
+                <img src="img/step/interet_actual.svg"/>
+                <div> Centre d'interets</div>
+            </div>
+            <img class="trait" src="img/step/trait2_empty.svg"/>
+            <div class="etape">
+                <img src="img/step/lecture_empty.svg"/>
+                <div>Préférences de lecture</div>
+            </div>
+            <img class="trait" src="img/step/trait3_empty.svg"/>
+            <div class="etape">
+                <img src="img/step/langue_empty.svg"/>
+                <div>Langue</div>
+            </div> 
+        </div>
+
+        <div class="container_tranche  fond_journal" > 
+            <div>
+                <h2>Centre(s) d'interet(s)</h2>
+                <div>Choisissez un ou plusieurs centres d’intérêts parmi les différents thèmes ci-dessous. 
+                    En fonction de vos choix, le lutin du Père-Noël vous guidera vers les meilleurs livres à offrir à votre entourage.
+                </div>
+            </div>
+            
+            <div class="row_tranche" >
+
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Littérature</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Roman policier</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Science fiction</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Fantasie</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Poésie</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Théatre</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Histoire</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Scolaire</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Médiévale</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Voyage</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Humour</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Architecture</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Psychologie</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Sociologie</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Ethnologie</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Education</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Politique</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Design</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Mode</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Environement</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Religions</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Biographie</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Art</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Philosophie</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Cinéma</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Musique</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Jeux</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Mangas</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> BD</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Comics</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Tourisme</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Sport</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Loisirs Creatif</div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> Jardin et nature </div>
+                </div>
+                <div class='container_choice_tranche'>
+                    <img src="img/encadrement_interet.svg"/>
+                    <div class="text_choise_tranche"> E-book</div>
+                </div>
+            </div>
+            <div>
+                <button onclick="changeStep(2)" >Passer l'étape</button>
+            </div>
+    </div>
+    </div>
+    
+    <div class="disabled" id="step3">    
+        <div class="etapes">
+            <div class="etape">
+                <img src="img/step/tranche_full.svg"/>
+                <div> Tranche d'age</div>
+            </div>
+            <img class="trait" src="img/step/trait1_full.svg"/>
+            <div class="etape">
+                <img src="img/step/interet_full.svg"/>
+                <div> Centre d'interets</div>
+            </div>
+            <img class="trait" src="img/step/trait2_full.svg"/>
+            <div class="etape">
+                <img src="img/step/lecture_actual.svg"/>
+                <div>Préférences de lecture</div>
+            </div>
+            <img class="trait" src="img/step/trait3_empty.svg"/>
+            <div class="etape">
+                <img src="img/step/langue_empty.svg"/>
+                <div>Langue</div>
+            </div> 
+        </div>
+
+        <div class="container_tranche fond_journal" >
+            <div class="col_tranche" >
+                <div>
+                <h2 class="title" >Preférence de lecture</h2>
+                <div>Le lutin du Père-Noël a encore besoin de précisions ! Petit ou grand lecteur ?
+                     Définissez les préférences de lecture de votre entourage pour que le lutin vous propose les meilleurs choix de livres.</div>
+                </div>
+                <div class="row_tranche" >
+                       <input class="slider" type="range">
+                    </div>
+                    <div>
+                        <button onclick="changeStep(3)" >Passer l'étape</button>
+                    </div>
+            </div>
+            <img class="illu" src="img/illu/guitare.svg"/>
+
+            
+        </div>
+
+    </div>
+
+    <div class="disabled" id="step4">    
+        <div class="etapes">
+            <div class="etape">
+                <img src="img/step/tranche_full.svg"/>
+                <div> Tranche d'age</div>
+            </div>
+            <img class="trait" src="img/step/trait1_full.svg"/>
+            <div class="etape">
+                <img src="img/step/interet_full.svg"/>
+                <div> Centre d'interets</div>
+            </div>
+            <img class="trait" src="img/step/trait2_full.svg"/>
+            <div class="etape">
+                <img src="img/step/lecture_full.svg"/>
+                <div>Préférences de lecture</div>
+            </div>
+            <img class="trait" src="img/step/trait3_full.svg"/>
+            <div class="etape">
+                <img src="img/step/langue_actual.svg"/>
+                <div>Langue</div>
+            </div> 
+        </div>
+
+        <div class="container_tranche fond_journal" >
+            <div class="col_tranche" >
+                <div>
+                <h2 class="title" >Préférences linguistiques </h2>
+                <div>Mollat vous propose une large bibliothèque d’oeuvres littéraires disponibles en plusieurs langues. Version originale, française, allemande, espagnole ou anglo-saxonne ?
+                     Partagez vos préférences au lutin du Père-Noël pour affiner votre recherche !</div>
+                </div>
+                <div class="row_tranche" >
+                        <div class="container_choice_tranche" > 
+                            <img src="img/encadrement_age.svg">
+                            <div class="text_choise_tranche"  >Littérature anglo-saxonne en VO</div>  
+                        </div>
+
+                        <div class="container_choice_tranche" > 
+                            <img src="img/encadrement_age.svg">
+                            <div class="text_choise_tranche"  >Littérature hispano-portugaise en VO</div>  
+                        </div>
+
+                        <div class="container_choice_tranche" > 
+                            <img src="img/encadrement_age.svg">
+                            <div class="text_choise_tranche"  >Littérature autres langues en VO</div>  
+                        </div>
+
+                        <div class="container_choice_tranche" > 
+                            <img src="img/encadrement_age.svg">
+                            <div class="text_choise_tranche"  >Livres bilingues</div>  
+                        </div>
+                        <div class="container_choice_tranche" > 
+                            <img src="img/encadrement_age.svg">
+                            <div class="text_choise_tranche"  >Littérature française</div>  
+                        </div>
+                    </div>
+                    <div>
+                        <a  href="https://xd.adobe.com/view/7054c8f0-3530-4977-bf12-56549ab9a2b0-2507/"> Voir le résultat </a>
+                    </div>
+            </div>
+            <img class="illu" src="img/illu/guitare.svg"/>
+
+            
+    </div>
+
+        
+
+
+    </div>
+
+
+
+    
+    <script src="main.js"></script>     
+</body>
+</html>

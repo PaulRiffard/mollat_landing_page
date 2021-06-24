@@ -1,0 +1,150 @@
+@font-face
+{
+    font-family: James_Stroker;
+    src: url(font/James_Stroker.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: lato;
+}
+
+header{
+    top:0;
+  height: 100vh;
+}
+
+.img_header{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100vh;
+}
+
+.col_header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 25px;
+    width: 60%;
+    height: 100%;
+}
+
+.close{
+    position: absolute;
+    right: 0;
+    margin: 20px;
+}
+
+.row_button_header{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.row_button_header img{
+    margin-left: 40px;
+}
+
+.grand_title{
+    font-family: James_Stroker;
+    color:#001689;
+    font-size: 40px;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.etapes{
+    margin: 0 20px;
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    margin-top: 25px;
+}
+
+.etape{
+    color:#001689;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trait{
+    min-width: 10%;
+}
+
+.fond_header{
+    background-image: url(img/fond_header.png);
+    background-size: 100%;
+}
+
+.fond_journal{
+    background-image: url(img/fond.png);
+
+}
+
+.container_tranche{
+    margin: 50px;
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.col_tranche{
+   width: 70vh; 
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.row_tranche{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.container_choice_tranche{
+    margin: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.text_choise_tranche{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+button{
+
+    background-color: #001689;
+    color: white;
+    border: none;
+    width: 115px;
+    height: 44px;
+}
+
+a{
+
+    background-color: #001689;
+    color: white;
+    border: none;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.disabled{
+    display: none;
+}
+
+.slider{
+    width: 100%;
+}
